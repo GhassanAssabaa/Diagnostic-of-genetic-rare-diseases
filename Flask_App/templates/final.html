@@ -1,0 +1,45 @@
+<html>
+<style type="text/css">
+body {
+background-color: #A9A9A9
+}
+body div h1 {
+background-color: #a83232;
+color: #ffffff;
+}
+body h2{
+margin-bottom: 80px;
+background-color: #a83232;
+color: #ffffff;
+}
+body p{
+margin-top: 30px;
+font-size: 1.5rem;
+}
+body form input{
+margin-bottom: 50px;
+font-size: 20px;
+border-radius: 8px;
+background-color: #e7e7e7;
+}
+</style>
+<head bgcolor="#f54242">
+    <link rel="stylesheet" type="text/css" href="Colors22.css">
+    <title>Facial phenotypes of genetic disorders</title>
+</head>
+<body bgcolor="#ffffff">
+<div align="center">
+    <h1>Identifying facial phenotypes of genetic disorders</h1>
+    <img src=" {{url_for('send_image', filename=image_name)}}">
+    <p>The final result is {{name}} </p>
+    <h2>Description : </h2>
+    <p>{{desc}}<p>
+    <h2>Frequency : </h2>
+    <p>{{desc2}}</p>
+    <br>
+    <form method="get" action="/">
+      <input type="submit" value="Go back!">
+    </form>
+</div>
+</body>
+</html>
